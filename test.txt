@@ -1,0 +1,42 @@
+# Hello, Sending some tasks to do, if you have any questions or difficulties then let me know.
+
+1. Write a code to get two years data (1st jan 2021 to 31st dec 2022) of 15 minute interval for symbol: BTCUSD for any category,
+output result format: pandas dataframe, convert timestamp to datetime with IST timezone and set datetime column as dataframe index,
+and add VWAP and MACD columns (check https://github.com/twopirllc/pandas-ta for vwap and macd calculations)
+
+Documentation:
+https://bybit-exchange.github.io/docs/v5/market/kline
+
+2. Write code to scrape option chain for given symbol and expiry date from NSE new website and export it to excel
+url: https://www.nseindia.com/option-chain
+
+3. Same as 1 but get data for 5 symbols at the same time using threading/multiprocessing
+symbols: BTCUSD, ETHUSD, BITUSD, SOLUSD, XRPUSD
+
+4. Get historical candle data from here, https://www.investing.com/equities/tesla-motors-chart,
+without using selenium or other browser automation tool
+keep symbol, candle timeframe, date range as parameters for fetching data
+
+5. Find url, request type and payload required to programmatically login here: https://kite.zerodha.com/
+and create code to log in using python requests module,
+no need to have account on kite as we can test with wrong credentials also and see request response
+
+6. Get dividend date information from here, https://www.boerse-frankfurt.de/equity/adidas-ag/company-details,
+without using selenium or other browser automation tool, keep symbol as parameter for fetching data
+
+7. Write a code to get public live order book data for BTCUSDT spot
+
+documentation:
+https://bybit-exchange.github.io/docs/v5/ws/connect
+
+# use empty string as api key and secret, it's ok if authentication fails, we still receive data as it is public endpoint
+api_key = ""
+api_secret = ""
+
+websocket url = 'wss://stream.bybit.com/v5/public/spot'
+
+8. Same as number 7 but run the process in background thread using threading module
+
+9. Fetch live options data from binance for particular symbol for closest 4 expiries with 5 closest OTM call strikes
+and 5 closest OTM put strikes.
+
