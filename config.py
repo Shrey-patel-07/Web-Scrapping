@@ -1,3 +1,3 @@
 # Set API key and secret
-api_key = "vIQtcNKitgpAM7HH4q"
-api_secret = "MuAXZEwj9NxaIlGbmPapvulN4iolpIp0xlyu"
+API_KEY = "vIQtcNKitgpAM7HH4q"
+API_SECRET = "MuAXZEwj9NxaIlGbmPapvulN4iolpIp0xlyu"
