@@ -39,4 +39,3 @@ websocket url = 'wss://stream.bybit.com/v5/public/spot'
 
 9. Fetch live options data from binance for particular symbol for closest 4 expiries with 5 closest OTM call strikes
 and 5 closest OTM put strikes.
-

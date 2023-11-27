@@ -1,3 +1,6 @@
+
+### Without Using Opensource Library ###
+
 from datetime import datetime
 import logging
 import urllib
@@ -408,11 +411,10 @@ def get_option_chain(
     )
 
 
-file_name = "data.csv"
+file_name = "data"
 
 
 data = get_option_chain(symbol="ADANIPORTS", expiry_date="28-12-2023") # dd-mm-yyyy
 
-
-data.to_csv(file_name)
-print(f'Data saved to CSV file {file_name}.')
+data.to_excel(file_name + ".xlsx")
+print(f'Data saved to Excel file {file_name}.xlsx.')
