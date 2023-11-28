@@ -28,7 +28,6 @@ tokeninfo["enctoken"] = enctoken
 with open('config.ini', 'w') as conf:
     config_object.write(conf)
 
-print("\nEnjoy :)")
 print("!!! Dont Close the terminal !!!")
 while True:
     sleep(10)
